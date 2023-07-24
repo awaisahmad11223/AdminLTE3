@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="./assets/css/f-all.min.css">
+<link rel="stylesheet" href="./assets/css/styly.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+
+        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+    </header>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav " id="sidebar">
+                <div>
+                    <a href="#" class="nav_logo">
+                        <img class="nav_logo-icon" src="./assets/img/AdminLTELogo.webp" alt="" srcset="">
+                        <span class="nav_logo-name">AdminLTE 3</span>
+
+                    </a>
+                    <hr class="text-light pt--5 hr-line">
+                    <a href="#" class="nav_logo">
+                        <img class="nav_logo-icon rounded-5" src="./assets/img/user2-160x160.jpg" alt="" srcset="">
+                        <span class="nav_logo-name">Alexander Pierce</span>
+
+                    </a>
+                    <hr class="text-light hr-line">
+
+                    <div class="input-group" data-widget="sidebar-search">
+                        <button class="btn btn-sidebar">
+                            <i class="fas fa-search fa-fw text-white border-1"></i>
+                        </button>
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+
+                        </div>
+                    </div>
+                    <div class="nav_list">
+                        <a href="index.html" class="nav_link ">
+                            <i class="nav-icon fas fa-tachometer-alt"></i><span class="nav_name">Dashboard</span>
+                        </a>
+                        <a href="Widgets.html" class="nav_link "> <i class="nav-icon fas fa-th"></i>
+                            <span class="nav_name">Widgets <span class="text-bg-danger new-sec">new</span></span>
+
+                        </a>
+                        <a href="chart.html" class="nav_link active"> <i class="nav-icon fas fa-chart-pie"></i> <span
+                                class="nav_name">Cards</span>
+                        </a>
+
+
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav_link ">
+                            <i class='bx bx-message-square-detail nav_icon'></i>
+                            <span class="nav_name">Drop</span>
+                        </a>
+                        <ul class="nav_link collapse list-unstyled " id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-bookmark nav_icon'></i>
+                            <span class="nav_name">Bookmark</span> </a>
+                        <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span
+                                class="nav_name">Files</span>
+                        </a>
+                        <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                            <span class="nav_name">Stats</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="nav_link ">
+                    <i class='bx bx-log-out nav_icon'></i>
+                    <span class="nav_name">SignOut</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <!--  -->
+
+    <div class="pt-4 pb-3">
+        <span class="fs-3">Chart Js</span>
+        <div class="float-end pt-2">
+            <span><a href="">Home</a></span><span>/Widgets</span>
+        </div>
+    </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class=" alt-chart shadow mt-2">
+                    <div class="p-1 p-lg-1 bg-info  rounded-top chart-boder">
+                        <div class=" p-2 bg-info">
+                            <span class="fs-4 text-light">Area Chart </span>
+                            <div class="float-end chart-button  pt-1">
+                                <button class="float-end bg-info text-light border-0"> <svg
+                                        class="svg-inline--fa fa-xmark  float-end pt-1" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="xmark" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-xmark float-end pt-1"></i> Font Awesome fontawesome.com --></button>
+                                <button class="float-end  bg-info text-light border-0"><svg
+                                        class="svg-inline--fa fa-window-minimize float-end" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="window-minimize" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-window-minimize float-end"></i> Font Awesome fontawesome.com --></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body pt-2">
+                        <img id="getImage" src="assets/img/download.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class=" alt-chart shadow mt-2">
+                    <div class="p-1 p-lg-1  rounded-top chart-boder">
+                        <div class="p-2  ">
+                            <span class="fs-4 text-light">Line Chart </span>
+                            <div class="float-end chart-button  pt-1">
+                                <button class="float-end border-bottom1 text-light border-0"> <svg
+                                        class="svg-inline--fa fa-xmark  float-end pt-1" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="xmark" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-xmark float-end pt-1"></i> Font Awesome fontawesome.com --></button>
+                                <button class="float-end border-bottom2 text-light border-0"><svg
+                                        class="svg-inline--fa fa-window-minimize float-end" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="window-minimize" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-window-minimize float-end"></i> Font Awesome fontawesome.com --></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body pt-2">
+                        <img id="getImage" src="assets/img/LineCart.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class=" alt-chart shadow mt-2">
+                    <div class="p-1 p-lg-1  rounded-top bg-danger">
+                        <div class="p-2 ">
+                            <span class="fs-4 text-light">Donut Chart</span>
+                            <div class="float-end chart-button  pt-1">
+                                <button class="float-end bg-danger text-light border-0"> <svg
+                                        class="svg-inline--fa fa-xmark  float-end pt-1" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="xmark" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-xmark float-end pt-1"></i> Font Awesome fontawesome.com --></button>
+                                <button class="float-end bg-danger text-light border-0"><svg
+                                        class="svg-inline--fa fa-window-minimize float-end" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="window-minimize" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-window-minimize float-end"></i> Font Awesome fontawesome.com --></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body pt-2 pb-2">
+                        <canvas id="DonutChart" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class=" alt-chart shadow mt-2">
+                    <div class="p-1 p-lg-1  rounded-top bg-success">
+                        <div class=" p-2  ">
+                            <span class="fs-4 text-light">Bar Chart</span>
+                            <div class="float-end chart-button  pt-1">
+                                <button class="float-end bg-success text-light border-0"> <svg
+                                        class="svg-inline--fa fa-xmark  float-end pt-1" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="xmark" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-xmark float-end pt-1"></i> Font Awesome fontawesome.com --></button>
+                                <button class="float-end bg-success text-light border-0"><svg
+                                        class="svg-inline--fa fa-window-minimize float-end" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="window-minimize" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-window-minimize float-end"></i> Font Awesome fontawesome.com --></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body pt-2 pb-2">
+                        <canvas id="BarChart" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class=" alt-chart shadow mt-2 ">
+                    <div class="p-1 p-lg-1 rounded-top bg-danger">
+                        <div class="  p-2  ">
+                            <span class="fs-4 text-light">Pie Chart </span>
+                            <div class="float-end chart-button  pt-1">
+                                <button class="float-end bg-danger text-light border-0"> <svg
+                                        class="svg-inline--fa fa-xmark  float-end pt-1" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="xmark" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-xmark float-end pt-1"></i> Font Awesome fontawesome.com --></button>
+                                <button class="float-end bg-danger text-light border-0"><svg
+                                        class="svg-inline--fa fa-window-minimize float-end" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="window-minimize" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-window-minimize float-end"></i> Font Awesome fontawesome.com --></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" card-body pt-2 pb-2">
+                        <canvas id="PieChart" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6">
+                <div class=" alt-chart shadow mt-2">
+                    <div class="p-1 p-lg-1  rounded-top bg-success">
+                        <div class=" p-2  ">
+                            <span class="fs-4 text-light">Stacked Bar Chart </span>
+                            <div class="float-end chart-button  pt-1">
+                                <button class="float-end bg-success text-light border-0"> <svg
+                                        class="svg-inline--fa fa-xmark  float-end pt-1" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="xmark" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-xmark float-end pt-1"></i> Font Awesome fontawesome.com --></button>
+                                <button class="float-end bg-success text-light border-0"><svg
+                                        class="svg-inline--fa fa-window-minimize float-end" aria-hidden="true"
+                                        focusable="false" data-prefix="fas" data-icon="window-minimize" role="img"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                            d="M32 416c-17.7 0-32 14.3-32 32s14.3 32 32 32H480c17.7 0 32-14.3 32-32s-14.3-32-32-32H32z">
+                                        </path>
+                                    </svg><!-- <i class="fa-solid fa-window-minimize float-end"></i> Font Awesome fontawesome.com --></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" card-body pt-2 pb-2">
+                        <canvas id="StactBarChart" style="width:100%;max-width:600px"></canvas>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            
+
+            <footer class="main-footer pt-2 pb-3 border-top">
+                <strong><b>Copyright © 2014-2021 <a href="https://adminlte.io">AWAIS AHMAD</a>.</b></strong>
+                All rights reserved.
+                <div class="float-end d-none d-sm-inline-block">
+                    <b>Version</b> 3.2.0
+                </div>
+            </footer>
+            <script src="assets/js/StackeBarCart.js"></script>
+            <script src="assets/js/PieChart.js"></script>
+            <script src="assets/js/DonutChart.js"></script>
+            <script src="assets/js/BarChart.js  "></script>
+            <script src="./assets/js/jquery-3.7.0.min.js"></script>
+            <script src="./assets/js/bootstrap.min.js"></script>
+            <script src="./assets/js/f-all.min.js"></script>
+            <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,1778 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin LTE /widget</title>
+    <link rel="icon" href="assets/img/AdminLTELogo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/f-all.min.css">
+    <link rel="stylesheet" href="./assets/css/styly.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body id="body-pd">
+
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+
+        <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+    </header>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav " id="sidebar">
+                <div>
+                    <a href="#" class="nav_logo">
+                        <img class="nav_logo-icon" src="./assets/img/AdminLTELogo.webp" alt="" srcset="">
+                        <span class="nav_logo-name">AdminLTE 3</span>
+
+                    </a>
+                    <hr class="text-light pt--5 hr-line">
+                    <a href="#" class="nav_logo">
+                        <img class="nav_logo-icon rounded-5" src="./assets/img/user2-160x160.jpg" alt="" srcset="">
+                        <span class="nav_logo-name">Alexander Pierce</span>
+
+                    </a>
+                    <hr class="text-light hr-line">
+
+                    <div class="input-group" data-widget="sidebar-search">
+                        <button class="btn btn-sidebar">
+                            <i class="fas fa-search fa-fw text-white border-1"></i>
+                        </button>
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+
+                        </div>
+                    </div>
+                    <div class="nav_list">
+                        <a href="index.html" class="nav_link ">
+                            <i class="nav-icon fas fa-tachometer-alt"></i><span class="nav_name">Dashboard</span>
+                        </a>
+                        <a href="#" class="nav_link active"> <i class="nav-icon fas fa-th"></i>
+                            <span class="nav_name">Widgets <span class="text-bg-danger new-sec">new</span></span>
+
+                        </a>
+                        <a href="chart.html" class="nav_link "> <i class="nav-icon fas fa-chart-pie"></i> <span
+                                class="nav_name">Cards</span></a>
+
+
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav_link ">
+                            <i class='bx bx-message-square-detail nav_icon'></i>
+                            <span class="nav_name">Drop</span>
+                        </a>
+                        <ul class="nav_link collapse list-unstyled " id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-bookmark nav_icon'></i>
+                            <span class="nav_name">Bookmark</span> </a>
+                        <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span
+                                class="nav_name">Files</span>
+                        </a>
+                        <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                            <span class="nav_name">Stats</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="nav_link ">
+                    <i class='bx bx-log-out nav_icon'></i>
+                    <span class="nav_name">SignOut</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+    <!-- main contact satart -->
+    <div class="container-fluid">
+        <div class="">
+            <span class="fs-1">Widgets</span>
+            <div class="float-end p-4">
+                <span><a href="">Home</a></span><span>/Widgets</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="p-2">
+            <h5>Info Box</h5>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon">
+                                <span class="info-box-icon text-light"><i
+                                        class="far fa-envelope bg-info p-3 rounded-2 fs-3"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <p>Massage</p>
+                            <p><b>1,140</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon text-light">
+                                <span class="info-box-icon "><i
+                                        class="far fa-flag p-3 bg-success rounded-2 fs-3"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <p>Bookmarks</p>
+                            <p><b>410</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon">
+                                <span class="info-box-icon "><i
+                                        class="far fa-copy bg-warning p-3 rounded-2 fs-3"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <p>Uploads</p>
+                            <p><b>13,648</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon text-light">
+                                <span class="info-box-icon "><i
+                                        class="far fa-star bg-danger p-3 rounded-2 fs-3"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <p>Likes</p>
+                            <p><b>93,139</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2">
+            <h5>Info Box With Custom Shadows <em class="fs-6">Using Bootstrap's Shadow Utility</em></h5>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon">
+                                <span class="info-box-icon text-light"><i
+                                        class="far fa-envelope bg-info p-3 rounded-2 fs-3"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <p>Shadows</p>
+                            <p><b>None</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon text-light">
+                                <span class="info-box-icon "><i
+                                        class="far fa-flag p-3 bg-success rounded-2 fs-3"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <p>Shadows</p>
+                            <p><b>Small</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon">
+                                <span class="info-box-icon "><i
+                                        class="far fa-copy bg-warning p-3 rounded-2 fs-3"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <p>Shadows</p>
+                            <p><b>Regular</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon text-light">
+                                <span class="info-box-icon "><i
+                                        class="far fa-star bg-danger p-3 rounded-2 fs-3"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <p>Shadows</p>
+                            <p><b>Large</b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ////////////////////// -->
+    <div class="container-fluid">
+        <div class="p-2">
+            <h5>Info Box With <span class="text-danger fs-6"> bg-*</span></h5>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3 bg-info">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon">
+                                <span class="info-box-icon text-light">
+                                    <i class="far fa-bookmark bg-info p-3 rounded-2 fs-1"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9 text-light">
+                            <span>Bookmarks</span><br>
+                            <span><b>41,410</b></span>
+                            <b>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar " style="width: 70%;"></div>
+                                </div>
+                            </b>
+                            <span>70% Increase in 30 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3 bg-success">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon text-light">
+                                <span class="info-box-icon "><i
+                                        class="far fa-thumbs-up p-3 bg-success rounded-2 fs-1"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9 text-light">
+                            <span>Bookmarks</span><br>
+                            <span><b>41,410</b></span>
+                            <b>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar line " style="width: 70%;"></div>
+                                </div>
+                            </b>
+                            <span>70% Increase in 30 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3 bg-warning ">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon">
+                                <span class="info-box-icon "><i
+                                        class="far fa-calendar-alt p-3 rounded-2 fs-1"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <span>Bookmarks</span><br>
+                            <span><b>41,410</b></span>
+                            <b>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar line2 " style="width: 70%;"></div>
+                                </div>
+                            </b>
+                            <span>70% Increase in 30 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3 bg-danger">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon text-light">
+                                <span class="info-box-icon "><i class="fas fa-comments p-3 rounded-2 fs-1"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9 text-light">
+                            <span>Bookmarks</span><br>
+                            <span><b>41,410</b></span>
+                            <b>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar line3 " style="width: 70%;"></div>
+                                </div>
+                            </b>
+                            <span>70% Increase in 30 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ///////////////////////////////////////////// -->
+    <div class="container-fluid">
+        <div class="p-2">
+            <h5>Info Box With <span class="text-danger fs-6"> bg-gradient-*</span></h5>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3 bg-info">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon">
+                                <span class="info-box-icon text-light">
+                                    <i class="far fa-bookmark bg-info p-3 rounded-2 fs-1"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9 text-light">
+                            <span>Bookmarks</span><br>
+                            <span><b>41,410</b></span>
+                            <b>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar " style="width: 70%;"></div>
+                                </div>
+                            </b>
+                            <span>70% Increase in 30 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3 bg-success">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon text-light">
+                                <span class="info-box-icon "><i
+                                        class="far fa-thumbs-up p-3 bg-success rounded-2 fs-1"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9 text-light">
+                            <span>Bookmarks</span><br>
+                            <span><b>41,410</b></span>
+                            <b>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar line " style="width: 70%;"></div>
+                                </div>
+                            </b>
+                            <span>70% Increase in 30 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3 bg-warning ">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon">
+                                <span class="info-box-icon "><i
+                                        class="far fa-calendar-alt p-3 rounded-2 fs-1"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <span>Bookmarks</span><br>
+                            <span><b>41,410</b></span>
+                            <b>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar line2 " style="width: 70%;"></div>
+                                </div>
+                            </b>
+                            <span>70% Increase in 30 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card p-3 bg-danger">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="info-box-icon text-light">
+                                <span class="info-box-icon "><i class="fas fa-comments p-3 rounded-2 fs-1"></i></span>
+                            </div>
+                        </div>
+                        <div class="col-9 text-light">
+                            <span>Bookmarks</span><br>
+                            <span><b>41,410</b></span>
+                            <b>
+                                <div class="progress" style="height: 5px;">
+                                    <div class="progress-bar line3 " style="width: 70%;"></div>
+                                </div>
+                            </b>
+                            <span>70% Increase in 30 Days</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ........................................ -->
+    <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+        <div class="p-3 fw-bold">
+            <h4>Small Box</h4>
+        </div>
+        <div class="container-fluid">
+            <div class="cards-width">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-info ">
+
+                            <div class="fw-bolder text-white p-3 float-end first-card">
+                                <h1>150</h1>
+                                <i class="fa-solid fa-bag-shopping float-end card-icon"></i>
+                                <p>New Order</p>
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-success ">
+
+                            <div class="fw-bolder text-white p-3 float-end first-card">
+                                <h1>53%</h1>
+                                <i class="fa-solid fa-chart-simple  float-end card-icon2"></i>
+
+                                <p>Bounce Rate</p>
+
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-warning ">
+
+                            <div class="fw-bolder p-3 float-end first-card">
+                                <h1>44</h1>
+                                <i class="fa-solid fa-user float-end card-icon3"></i>
+                                <p>User Registrations</p>
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-danger ">
+
+                            <div class="fw-bolder text-white p-3 float-end first-card">
+                                <h1>65</h1>
+                                <i class="nav-icon fas fa-chart-pie float-end card-icon4"></i>
+                                <p>Unique Visitors</p>
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-info ">
+
+                            <div class="fw-bolder text-white p-3 float-end first-card">
+                                <h1>150</h1>
+                                <i class="fa-solid fa-bag-shopping float-end card-icon"></i>
+                                <p>New Order</p>
+                                <div class="overlay">
+                                    <i class="fas fa-2x fa-sync-alt text-dark"></i>
+                                </div>
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-success ">
+
+                            <div class="fw-bolder text-white p-3 float-end first-card">
+                                <h1>53%</h1>
+                                <i class="fa-solid fa-chart-simple  float-end card-icon2"></i>
+
+                                <p>Bounce Rate</p>
+                                <div class="overlay">
+                                    <i class="fas fa-2x fa-sync-alt"></i>
+                                </div>
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //////////////////////////////////////////////////////// -->
+    <div class="container-fluid">
+        <div class="p-2">
+            <h5>Cards</h5>
+            <p>Abilities</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-info ">
+                        <div class="text-light">
+                            <span><b>Expandable</b></span>
+                            <button class="float-end bg-info text-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-success ">
+                        <div class="text-light">
+                            <span><b>Collapsable</b></span>
+                            <button class="float-end bg-success text-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-warning ">
+                        <div>
+                            <span><b>Removeable</b></span>
+                            <button class="float-end bg-warning border-0"> <i
+                                    class="fa-solid fa-xmark float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-danger ">
+                        <div class="text-light">
+                            <span><b>Maximizable</b></span>
+                            <button class="float-end bg-danger border-0"><i class="fa-solid fa-expand "></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-info ">
+                        <div>
+                            <span>Card Refresh</span>
+                            <button class="float-end bg-info text-light border-0"><i
+                                    class="fa-solid fa-rotate"></i></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-success ">
+                        <div class="text-light">
+                            <span><b>All together</b></span>
+                            <div class="float-end">
+                                <button class="float-end bg-success text-light border-0"> <i
+                                        class="fa-solid fa-xmark float-end pt-1"></i></button>
+                                <button class="float-end bg-success text-light border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <button class="float-end bg-success text-light border-0"><i
+                                        class="fa-solid fa-expand "></i></button>
+                                <button class="float-end bg-success text-light border-0"><i
+                                        class="fa-solid fa-rotate"></i></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-warning ">
+                        <div>
+                            <span>Loading State</span>
+                        </div>
+                        <div class="overlay">
+                            <i class="fas fa-2x fa-sync-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-danger ">
+                        <div>
+                            <span>Loading State(Dark)</span>
+                        </div>
+                        <div class="overlay">
+                            <i class="fas fa-2x fa-sync-alt"></i>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="p-2">
+            <h5>Custom Shadows Variations <em class=" fs-6">Using Bootstrap's Shadow Utility</em></h5>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-info ">
+                        <div class="text-light">
+                            <span><b>Shadow-None</b></span>
+                            <button class="float-end bg-info text-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-success shadow-sm">
+                        <div class="text-light">
+                            <span><b>Shadow - Small</b></span>
+                            <button class="float-end bg-success text-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-warning ">
+                        <div>
+                            <span><b>Shadow - Regular</b></span>
+                            <button class="float-end bg-warning border-0"> <i
+                                    class="fa-solid fa-xmark float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-danger ">
+                        <div class="text-light">
+                            <span><b>Shadow - Large</b></span>
+                            <button class="float-end bg-danger border-0"><i class="fa-solid fa-expand "></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <h4 class="" style="padding-left: 19px;">Colors Variations</h4>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-info ">
+                        <div class="text-light">
+                            <span><b>Primary</b></span>
+                            <button class="float-end bg-info text-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-success ">
+                        <div class="text-light">
+                            <span><b>Success</b></span>
+                            <div class="float-end">
+                                <button class="float-end bg-success text-light border-0"> <i
+                                        class="fa-solid fa-xmark float-end pt-1"></i></button>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-warning ">
+                        <div>
+                            <span><b>Warning</b></span>
+                            <button class="float-end bg-warning  border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   ">
+                    <div class="card-header bg-danger ">
+                        <div class="text-light">
+                            <span><b>Danger</b></span>
+                            <!-- <i class="fa-solid fa-expand float-end"></i> -->
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card card-info">
+                    <div class="card-header">
+                        <div class=" ">
+                            <span><b>Primary Outline</b></span>
+                            <button class="float-end bg-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   card-success">
+                    <div class="card-header  ">
+                        <div class="">
+                            <span><b>Success Outline</b></span>
+                            <div class="float-end">
+                                <button class="float-end bg-light  border-0"> <i
+                                        class="fa-solid fa-xmark float-end pt-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card card-warning">
+                    <div class="card-header ">
+                        <div>
+                            <span><b>Warning Outline</b></span>
+                            <button class="float-end bg-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   card-danger">
+                    <div class="card-header ">
+                        <div class="">
+                            <span><b>Danger Outline</b></span>
+                            <!-- <i class="fa-solid fa-expand float-end"></i> -->
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card  bg-info ">
+                    <div class="card-header  ">
+                        <div class="text-light">
+                            <span><b>Primary</b></span>
+                            <button class="float-end bg-info text-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   bg-success">
+                    <div class="card-header  ">
+                        <div class="text-light">
+                            <span><b>Success</b></span>
+                            <div class="float-end">
+                                <button class="float-end bg-success text-light border-0"> <i
+                                        class="fa-solid fa-xmark float-end pt-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card  bg-warning  ">
+                    <div class="card-header ">
+                        <div>
+                            <span><b>Warning</b></span>
+                            <button class="float-end bg-warning  border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card  bg-danger ">
+                    <div class="card-header  ">
+                        <div class="text-light">
+                            <span><b>Danger</b></span>
+                            <!-- <i class="fa-solid fa-expand float-end"></i> -->
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card  bg-info ">
+                    <div class="card-header  ">
+                        <div class="text-light">
+                            <span><b>Primary</b></span>
+                            <button class="float-end bg-info text-light border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card   bg-success">
+                    <div class="card-header  ">
+                        <div class="text-light">
+                            <span><b>Success</b></span>
+                            <div class="float-end">
+                                <button class="float-end bg-success text-light border-0"> <i
+                                        class="fa-solid fa-xmark float-end pt-1"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card  bg-warning  ">
+                    <div class="card-header ">
+                        <div>
+                            <span><b>Warning</b></span>
+                            <button class="float-end bg-warning  border-0"><i
+                                    class="fa-solid fa-window-minimize float-end"></i></button>
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                <div class="card  bg-danger ">
+                    <div class="card-header  ">
+                        <div class="text-light">
+                            <span><b>Danger</b></span>
+                            <!-- <i class="fa-solid fa-expand float-end"></i> -->
+                        </div>
+                    </div>
+                    <div class="card-body shadow">
+                        <span>The body of card</span>
+                    </div>
+                </div>
+            </div>
+            <!-- /////////////////////////////////////chat section start///////////////////////////////////////// -->
+            <h3>Direct Chate</h3>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card  ">
+                    <div class="card-header  card-info">
+                        <div class="">
+                            <span><b>Direct Chate</b></span>
+                            <div class="float-end ">
+                                <button class="float-end  border-0"> <i
+                                        class="fa-solid fa-xmark  float-end pt-1"></i></button>
+                                <button class="float-end  border-0"><i class="fas fa-comments"></i></button>
+                                <button class="float-end  border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <span class="bg-info  rounded text-light span-3num"><b>3</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body body-border">
+                        <div class="card-body-section">
+                            <span><b>Alexander Pierce</b></span>
+                            <span class="float-end">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img">
+                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                            <p>Is this template really for free? That's unbelievable!</p>
+                        </div>
+                        <div class="card-body-section">
+                            <span class="float-end"><b>Sarah Bullock</b></span>
+                            <span>23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img1 pb-5 ">
+                            <img src="assets/img/user3-128x128.jpg" alt="" width="50px">
+                            <p>You better believe it!</p>
+                        </div>
+                        <form action="#" method="post" class="pt-5">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-info text-light">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- //////2nd chat card/////// -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card  ">
+                    <div class="card-header  card-success">
+                        <div class="">
+                            <span><b>Direct Chate</b></span>
+                            <div class="float-end ">
+                                <button class="float-end border-0"> <i
+                                        class="fa-solid fa-xmark  float-end pt-1"></i></button>
+                                <button class="float-end  border-0"><i class="fas fa-comments"></i></button>
+                                <button class="float-end  border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <span class="bg-success  rounded text-light span-3num"><b>3</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body body-border">
+                        <div class="card-body-section">
+                            <span><b>Alexander Pierce</b></span>
+                            <span class="float-end">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img">
+                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                            <p>Is this template really for free? That's unbelievable!</p>
+                        </div>
+                        <div class="card-body-section">
+                            <span class="float-end"><b>Sarah Bullock</b></span>
+                            <span>23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img1 pb-5 ">
+                            <img src="assets/img/user3-128x128.jpg" alt="" width="50px">
+                            <p class="bg-success text-light">You better believe it!</p>
+                        </div>
+                        <form action="#" method="post" class="pt-5">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-success text-light">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /////////3rd chat card////////// -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card  ">
+                    <div class="card-header  bg-warning">
+                        <div class="">
+                            <span><b>Direct Chate</b></span>
+                            <div class="float-end ">
+                                <button class="float-end bg-warning border-0"> <i
+                                        class="fa-solid fa-xmark  float-end pt-1"></i></button>
+                                <button class="float-end bg-warning border-0"><i class="fas fa-comments"></i></button>
+                                <button class="float-end bg-warning border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <span class="bg-danger  rounded text-light span-3num"><b>3</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body body-border">
+                        <div class="card-body-section">
+                            <span><b>Alexander Pierce</b></span>
+                            <span class="float-end">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img">
+                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                            <p>Is this template really for free? That's unbelievable!</p>
+                        </div>
+                        <div class="card-body-section">
+                            <span class="float-end"><b>Sarah Bullock</b></span>
+                            <span>23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img1 pb-5 ">
+                            <img src="assets/img/user3-128x128.jpg" alt="" width="50px">
+                            <p class="bg-warning">You better believe it!</p>
+                        </div>
+                        <form action="#" method="post" class="pt-5">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-warning ">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- ////////4th chat card///////// -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card  ">
+                    <div class="card-header  bg-danger">
+                        <div class="">
+                            <span><b>Direct Chate</b></span>
+                            <div class="float-end  ">
+                                <button class="float-end bg-danger border-0"> <i
+                                        class="fa-solid fa-xmark text-light float-end pt-1"></i></button>
+                                <button class="float-end bg-danger text-light border-0"><i
+                                        class="fas fa-comments"></i></button>
+                                <button class="float-end bg-danger text-light border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <span class="bg-danger  rounded text-light span-3num"><b>3</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body body-border">
+                        <div class="card-body-section">
+                            <span><b>Alexander Pierce</b></span>
+                            <span class="float-end">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img">
+                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                            <p>Is this template really for free? That's unbelievable!</p>
+                        </div>
+                        <div class="card-body-section">
+                            <span class="float-end"><b>Sarah Bullock</b></span>
+                            <span>23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img1 pb-5 ">
+                            <img src="assets/img/user3-128x128.jpg" alt="" width="50px">
+                            <p class="bg-danger text-light">You better believe it!</p>
+                        </div>
+                        <form action="#" method="post" class="pt-5">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-danger text-light">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- //////////////////second section color cards////////////////// -->
+            <h5 style="padding-left: 20px;">Custom Shadows Variations <em class="fs-6">Using Bootstrap's Shadow
+                    Utility</em></h5>
+            <!-- /////////5th card chart////////// -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card  shadow-none">
+                    <div class="card-header  card-info">
+                        <div class="">
+                            <span><b>Shadow - None</b></span>
+                            <div class="float-end ">
+                                <button class="float-end  border-0"> <i
+                                        class="fa-solid fa-xmark  float-end pt-1"></i></button>
+                                <button class="float-end  border-0"><i class="fas fa-comments"></i></button>
+                                <button class="float-end  border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <span class="bg-info  rounded text-light span-3num"><b>3</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body body-border">
+                        <div class="card-body-section">
+                            <span><b>Alexander Pierce</b></span>
+                            <span class="float-end">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img">
+                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                            <p>Is this template really for free? That's unbelievable!</p>
+                        </div>
+                        <div class="card-body-section">
+                            <span class="float-end"><b>Sarah Bullock</b></span>
+                            <span>23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img1 pb-5 ">
+                            <img src="assets/img/user3-128x128.jpg" alt="" width="50px">
+                            <p>You better believe it!</p>
+                        </div>
+                        <form action="#" method="post" class="pt-5">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-info text-light">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /////6th card chart///////// -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card  Shadow-Sm">
+                    <div class="card-header  card-success">
+                        <div class="">
+                            <span><b>Shadow - Small</b></span>
+                            <div class="float-end ">
+                                <button class="float-end border-0"> <i
+                                        class="fa-solid fa-xmark  float-end pt-1"></i></button>
+                                <button class="float-end  border-0"><i class="fas fa-comments"></i></button>
+                                <button class="float-end  border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <span class="bg-success  rounded text-light span-3num"><b>3</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body body-border">
+                        <div class="card-body-section">
+                            <span><b>Alexander Pierce</b></span>
+                            <span class="float-end">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img">
+                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                            <p>Is this template really for free? That's unbelievable!</p>
+                        </div>
+                        <div class="card-body-section">
+                            <span class="float-end"><b>Sarah Bullock</b></span>
+                            <span>23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img1 pb-5 ">
+                            <img src="assets/img/user3-128x128.jpg" alt="" width="50px">
+                            <p class="bg-success text-light">You better believe it!</p>
+                        </div>
+                        <form action="#" method="post" class="pt-5">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-success text-light">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /////////7th chat card/////// -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card shadow-p ">
+                    <div class="card-header  bg-warning">
+                        <div class="">
+                            <span><b>Shadow - Regular</b></span>
+                            <div class="float-end ">
+                                <button class="float-end bg-warning border-0"> <i
+                                        class="fa-solid fa-xmark  float-end pt-1"></i></button>
+                                <button class="float-end bg-warning border-0"><i class="fas fa-comments"></i></button>
+                                <button class="float-end bg-warning border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <span class="bg-danger  rounded text-light span-3num"><b>3</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body body-border">
+                        <div class="card-body-section">
+                            <span><b>Alexander Pierce</b></span>
+                            <span class="float-end">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img">
+                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                            <p>Is this template really for free? That's unbelievable!</p>
+                        </div>
+                        <div class="card-body-section">
+                            <span class="float-end"><b>Sarah Bullock</b></span>
+                            <span>23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img1 pb-5 ">
+                            <img src="assets/img/user3-128x128.jpg" alt="" width="50px">
+                            <p class="bg-warning">You better believe it!</p>
+                        </div>
+                        <form action="#" method="post" class="pt-5">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-warning ">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- /////////////8th chat card///////////  -->
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-3 col-xxl-3">
+                <div class="card shadow-lg ">
+                    <div class="card-header  bg-danger">
+                        <div class="text-light">
+                            <span><b>Shadow - Large</b></span>
+                            <div class="float-end  ">
+                                <button class="float-end bg-danger border-0"> <i
+                                        class="fa-solid fa-xmark text-light float-end pt-1"></i></button>
+                                <button class="float-end bg-danger text-light border-0"><i
+                                        class="fas fa-comments"></i></button>
+                                <button class="float-end bg-danger text-light border-0"><i
+                                        class="fa-solid fa-window-minimize float-end"></i></button>
+                                <span class="bg-danger  rounded text-light span-3num"><b>3</b></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-body body-border">
+                        <div class="card-body-section">
+                            <span><b>Alexander Pierce</b></span>
+                            <span class="float-end">23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img">
+                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                            <p>Is this template really for free? That's unbelievable!</p>
+                        </div>
+                        <div class="card-body-section">
+                            <span class="float-end"><b>Sarah Bullock</b></span>
+                            <span>23 Jan 2:00 pm</span>
+                        </div>
+                        <div class="card-body-section-img1 pb-5 ">
+                            <img src="assets/img/user3-128x128.jpg" alt="" width="50px">
+                            <p class="bg-danger text-light">You better believe it!</p>
+                        </div>
+                        <form action="#" method="post" class="pt-5">
+                            <div class="input-group">
+                                <input type="text" name="message" placeholder="Type Message ..." class="form-control">
+                                <span class="input-group-append">
+                                    <button type="button" class="btn btn-danger text-light">Send</button>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- ////////////////Chat section end////////////// -->
+            <h3 class="mt-4 mb-4">Social Widgets</h3>
+            <!-- card 3 section starr -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                <div class="card card-widget widget-user-2">
+                    <div class="widget-user-header bg-warning">
+                        <div class="widget-user-image ">
+                            <img class="img-circle elevation-2" src="assets/img/user7-128x128.jpg" alt="User Avatar">
+                        </div>
+                        <h3 class="widget-user-username ">Nadia Carmichael</h3>
+                        <h5 class="widget-user-descc ">Lead Developer</h5>
+                    </div>
+                    <div class="card-footer p-0">
+                        <ul class="nav flex-column card-border">
+                            <li class="nav-item border-bottom">
+                                <a href="#" class="nav-link">
+                                    Projects <span class="float-end badge bg-primary">31</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-bottom">
+                                <a href="#" class="nav-link">
+                                    Tasks <span class="float-end badge bg-info">5</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-bottom">
+                                <a href="#" class="nav-link">
+                                    Completed Projects <span class="float-end badge bg-success">12</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-1">
+                                <a href="#" class="nav-link">
+                                    Followers <span class="float-end badge bg-danger">842</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                <div class="card card-widget widget-user shadow">
+
+                    <div class="widget-user-header bg-info">
+                        <h3 class="widget-user-username">Alexander Pierce</h3>
+                        <h5 class="widget-user-desc">Founder &amp; CEO</h5>
+                    </div>
+                    <div class="widget-user-image">
+                        <img class="img-circle elevation-2 shadow" src="assets/img/user1-128x128.jpg" alt="User Avatar">
+                    </div>
+                    <div class="card-footer card-border pb-4">
+                        <div class="row">
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block ">
+                                    <h5 class="description-header ">3,200</h5>
+                                    <span class="description-text">SALES</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block">
+                                    <h5 class="description-header">13,000</h5>
+                                    <span class="description-text">FOLLOWERS</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="description-block">
+                                    <h5 class="description-header">35</h5>
+                                    <span class="description-text">PRODUCTS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                <div class="card card-widget widget-user shadow-lg">
+
+                    <div class="widget-user-header text-white"
+                        style="background: url('assets/img/photo1.webp') center center;">
+                        <h3 class="widget-user-username text-right text-end">Elizabeth Pierce</h3>
+                        <h5 class="widget-user-desc text-right text-end">Web Designer</h5>
+                    </div>
+                    <div class="widget-user-image">
+                        <img class="img-circle elevation-2 shadow" src="assets/img/user3-128x128.jpg" alt="User Avatar">
+                    </div>
+                    <div class="card-footer card-border pb-4">
+                        <div class="row">
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block ">
+                                    <h5 class="description-header ">3,200</h5>
+                                    <span class="description-text">SALES</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block">
+                                    <h5 class="description-header">13,000</h5>
+                                    <span class="description-text">FOLLOWERS</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="description-block">
+                                    <h5 class="description-header">35</h5>
+                                    <span class="description-text">PRODUCTS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                <div class="card card-widget shadow">
+                    <div class="card-header">
+                        <div class="user-block">
+                            <img class="img-circle" src="assets/img/user1-128x128.jpg" alt="User Image">
+                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span><br>
+                            <span class="description">Shared publicly </span>
+                        </div>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" title="Mark as read">
+                                <i class="far fa-circle"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card-body cards-body">
+                        <img class="img-fluid pad" src="assets/img/photo2.webp" alt="Photo">
+                        <p>I took this photo this morning. What do you guys think?</p>
+                        <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i> Share</button>
+                        <button type="button" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i>
+                            Like</button>
+                        <span class="float-end text-muted">127 likes - 3 comments</span>
+                    </div>
+
+                    <div class="card-footer card-comments">
+                        <div class="card-comment">
+
+                            <img class="img-circle img-sm" src="assets/img/user3-128x128.jpg" alt="User Image">
+                            <div class="comment-text">
+                                <span class="username">
+                                    Maria Gonzales
+                                    <span class="text-muted float-right">8:03 PM Today</span>
+                                </span>
+                                It is a long established fact that a reader will be distracted
+                                by the readable content of a page when looking at its layout.
+                            </div>
+
+                        </div>
+
+                        <div class="card-comment">
+
+                            <img class="img-circle img-sm" src="assets/img/user4-128x128.jpg" alt="User Image">
+                            <div class="comment-text">
+                                <span class="username">
+                                    Luna Stark
+                                    <span class="text-muted float-right">8:03 PM Today</span>
+                                </span>
+                                It is a long established fact that a reader will be distracted
+                                by the readable content of a page when looking at its layout.
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card-footer">
+                        <form action="#" method="post">
+                            <img class="img-fluid  img-cir img-sm" src="assets/img/user4-128x128.jpg" alt="Alt Text">
+                            <div class="img-push ">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="Press enter to post comment">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
+                <div class="card card-widget shadow">
+                    <div class="card-header">
+                        <div class="user-block">
+                            <img class="img-circle" src="assets/img/user1-128x128.jpg" alt="User Image">
+                            <span class="username"><a href="#">Jonathan Burke Jr.</a></span><br>
+                            <span class="description">Shared publicly</span>
+                        </div>
+
+                        <div class="card-tools">
+                            <button type="button" class="btn btn-tool" title="Mark as read">
+                                <i class="far fa-circle"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <button type="button" class="btn btn-tool" data-card-widget="remove">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="card-body card-bodys">
+
+                        <p>Far far away, behind the word mountains, far from the
+                            countries Vokalia and Consonantia, there live the blind
+                            texts. Separated they live in Bookmarksgrove right at</p>
+                        <p>the coast of the Semantics, a large language ocean.
+                            A small river named Duden flows by their place and supplies
+                            it with the necessary regelialia. It is a paradisematic
+                            country, in which roasted parts of sentences fly into
+                            your mouth.</p>
+
+                        <div class="attachment-block clearfix">
+                            <img class="attachment-img" src="assets/img/photo1.webp" alt="Attachment Image">
+                            <div class="attachment-pushed">
+                                <h4 class="attachment-heading"><a href="https://www.lipsum.com/">Lorem ipsum text
+                                        generator</a></h4>
+                                <div class="attachment-text">
+                                    Description about the attachment can be placed here.
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry... <a
+                                        href="#">more</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <button type="button" class="btn btn-default btn-sm"><i class="fas fa-share"></i> Share</button>
+                        <button type="button" class="btn btn-default btn-sm"><i class="far fa-thumbs-up"></i>
+                            Like</button>
+                        <span class="float-right text-muted">45 likes - 2 comments</span>
+                    </div>
+
+                    <div class="card-footer card-comments">
+                        <div class="card-comment">
+
+                            <img class="img-circle img-sm" src="assets/img/user3-128x128.jpg" alt="User Image">
+                            <div class="comment-text">
+                                <span class="username">
+                                    Maria Gonzales
+                                    <span class="text-muted float-right">8:03 PM Today</span>
+                                </span>
+                                It is a long established fact that a reader will be distracted
+                                by the readable content of a page when looking at its layout.
+                            </div>
+
+                        </div>
+
+                        <div class="card-comment">
+
+                            <img class="img-circle img-sm" src="assets/img/user5-128x128.jpg" alt="User Image">
+                            <div class="comment-text">
+                                <span class="username">
+                                    Nora Havisham
+                                    <span class="text-muted float-right">8:03 PM Today</span>
+                                </span>
+                                The point of using Lorem Ipsum is that it hrs a morer-less
+                                normal distribution of letters, as opposed to using
+                                'Content here, content here', making it look like readable English.
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="card-footer">
+                        <form action="#" method="post">
+                            <img class="img-fluid  img-cir img-sm" src="assets/img/user4-128x128.jpg" alt="Alt Text">
+                            <div class="img-push ">
+                                <input type="text" class="form-control form-control-sm"
+                                    placeholder="Press enter to post comment">
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+            <!--  -->
+            <h5 class="mb-2 mt-2">Custom Shadows Variations <small><i>Using Bootstrap's Shadow Utility</i></small></h5>
+            <!--Custom Shadows Variations Using Bootstrap's Shadow Utility  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                <div class="card card-widget widget-user-2">
+                    <div class="widget-user-header bg-warning">
+                        <div class="widget-user-image ">
+                            <img class="img-circle elevation-2" src="assets/img/user7-128x128.jpg" alt="User Avatar">
+                        </div>
+                        <h3 class="widget-user-username ">Nadia Carmichael</h3>
+                        <h5 class="widget-user-descc ">Lead Developer</h5>
+                    </div>
+                    <div class="card-footer p-0">
+                        <ul class="nav flex-column card-border">
+                            <li class="nav-item border-bottom">
+                                <a href="#" class="nav-link">
+                                    Projects <span class="float-end badge bg-primary">31</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-bottom">
+                                <a href="#" class="nav-link">
+                                    Tasks <span class="float-end badge bg-info">5</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-bottom">
+                                <a href="#" class="nav-link">
+                                    Completed Projects <span class="float-end badge bg-success">12</span>
+                                </a>
+                            </li>
+                            <li class="nav-item border-1">
+                                <a href="#" class="nav-link">
+                                    Followers <span class="float-end badge bg-danger">842</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                <div class="card card-widget widget-user shadow">
+
+                    <div class="widget-user-header bg-info">
+                        <h3 class="widget-user-username">Alexander Pierce</h3>
+                        <h5 class="widget-user-desc">Founder &amp; CEO</h5>
+                    </div>
+                    <div class="widget-user-image">
+                        <img class="img-circle elevation-2 shadow" src="assets/img/user1-128x128.jpg" alt="User Avatar">
+                    </div>
+                    <div class="card-footer card-border pb-4">
+                        <div class="row">
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block ">
+                                    <h5 class="description-header ">3,200</h5>
+                                    <span class="description-text">SALES</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block">
+                                    <h5 class="description-header">13,000</h5>
+                                    <span class="description-text">FOLLOWERS</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="description-block">
+                                    <h5 class="description-header">35</h5>
+                                    <span class="description-text">PRODUCTS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                <div class="card card-widget widget-user shadow-lg">
+
+                    <div class="widget-user-header text-white"
+                        style="background: url('assets/img/photo1.webp') center center;">
+                        <h3 class="widget-user-username text-right text-end">Elizabeth Pierce</h3>
+                        <h5 class="widget-user-desc text-right text-end">Web Designer</h5>
+                    </div>
+                    <div class="widget-user-image">
+                        <img class="img-circle elevation-2 shadow" src="assets/img/user3-128x128.jpg" alt="User Avatar">
+                    </div>
+                    <div class="card-footer card-border pb-4">
+                        <div class="row">
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block ">
+                                    <h5 class="description-header ">3,200</h5>
+                                    <span class="description-text">SALES</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 border-right">
+                                <div class="description-block">
+                                    <h5 class="description-header">13,000</h5>
+                                    <span class="description-text">FOLLOWERS</span>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-4 ">
+                                <div class="description-block">
+                                    <h5 class="description-header">35</h5>
+                                    <span class="description-text">PRODUCTS</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  last section start-->
+            <h5 class="mb-2 mt-2">Card with Image Overlay</h5>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                            <div class="card mb-2 bg-gradient-dark">
+                                <img class="card-img-top" src="assets/img/photo1.webp" alt="Dist Photo 1">
+                                <div class="card-img-overlay d-flex flex-column justify-content-end">
+                                    <h5 class="card-title text-primary text-white">Card Title</h5>
+                                    <p class="card-text text-white pb-2 pt-1">Lorem ipsum dolor sit amet, consectetur
+                                        adipisicing elit sed do eiusmod tempor.</p>
+                                    <a href="#" class="text-white">Last update 2 mins ago</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/photo2.webp" alt="Dist Photo 2">
+                                <div class="card-img-overlay d-flex flex-column justify-content-center">
+                                    <h5 class="card-title text-white mt-5 pt-2">Card Title</h5>
+                                    <p class="card-text pb-2 pt-1 text-white">
+                                        Lorem ipsum dolor sit amet, <br>
+                                        consectetur adipisicing elit <br>
+                                        sed do eiusmod tempor.
+                                    </p>
+                                    <a href="#" class="text-white">Last update 15 hours ago</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 col-xxl-4">
+                            <div class="card mb-2">
+                                <img class="card-img-top" src="assets/img/photo3.webp" alt="Dist Photo 3">
+                                <div class="card-img-overlay">
+                                    <h5 class="card-title text-info">Card Title</h5>
+                                    <p class="card-text pb-1 pt-1 text-white">
+                                        Lorem ipsum dolor <br>
+                                        sit amet, consectetur <br>
+                                        adipisicing elit sed <br>
+                                        do eiusmod tempor. </p>
+                                    <a href="#" class="">Last update 3 days ago</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+    <footer class="main-footer pt-2 pb-3 border-top">
+        <strong><b>Copyright © 2014-2021 <a href="https://adminlte.io">AWAIS AHMAD</a>.</b></strong>
+        All rights reserved.
+        <div class="float-end d-none d-sm-inline-block">
+            <b>Version</b> 3.2.0
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/f-all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
+</body>
+
+</html>

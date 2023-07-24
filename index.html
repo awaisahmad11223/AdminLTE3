@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin LTE</title>
+    <link rel="icon" href="assets/img/AdminLTELogo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/f-all.min.css">
+    <link rel="stylesheet" href="./assets/css/styly.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body id="body-pd">
+
+    <header class="header" id="header">
+        <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
+        <div class=" p-5 header-text-color-a">
+            <span><a href="">Home</a></span>
+            <span class="p-4"><a href="">Contact</a></span>
+        </div>
+        <div class="header_img float-end"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
+    </header>
+    <div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 col-xxl-3">
+        <div class="l-navbar" id="nav-bar">
+            <nav class="nav " id="sidebar">
+                <div>
+                    <a href="#" class="nav_logo">
+                        <img class="nav_logo-icon" src="./assets/img/AdminLTELogo.webp" alt="" srcset="">
+                        <span class="nav_logo-name">AdminLTE 3</span>
+
+                    </a>
+                    <hr class="text-light pt--5 hr-line">
+                    <a href="#" class="nav_logo">
+                        <img class="nav_logo-icon rounded-5" src="./assets/img/user2-160x160.jpg" alt="" srcset="">
+                        <span class="nav_logo-name">Alexander Pierce</span>
+
+                    </a>
+                    <hr class="text-light hr-line">
+                    <!-- <div class="input-group mb-3" id="searchBar">
+                    <input type="text" class="form-control form-control-sm" placeholder="Search">
+                    <button class="btn btn-outline-secondary btn-sm" type="button">
+                        <i class="bi bi-search"></i>
+                    </button>
+                </div> -->
+                    <div class="input-group" data-widget="sidebar-search">
+                        <button class="btn btn-sidebar">
+                            <i class="fas fa-search fa-fw text-white border-1"></i>
+                        </button>
+                        <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                            aria-label="Search">
+                        <div class="input-group-append">
+
+                        </div>
+                    </div>
+                    <div class="nav_list">
+                        <a href="index.html" class="nav_link active">
+                            <i class="nav-icon fas fa-tachometer-alt"></i><span class="nav_name">Dashboard</span>
+                        </a>
+                        <a href="Widgets.html#" class="nav_link"> <i class="nav-icon fas fa-th"></i>
+                            <span class="nav_name">Widgets <span class="text-bg-danger new-sec">new</span></span>
+
+                        </a>
+                        <a href="chart.html" class="nav_link "> <i class="nav-icon fas fa-chart-pie"></i> <span
+                            class="nav_name">Cards</span>
+                        </a>
+
+
+                        <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false"
+                            class="dropdown-toggle nav_link ">
+                            <i class='bx bx-message-square-detail nav_icon'></i>
+                            <span class="nav_name">Drop</span>
+                        </a>
+                        <ul class="nav_link collapse list-unstyled " id="homeSubmenu">
+                            <li>
+                                <a href="#">Home 1</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 2</a>
+                            </li>
+                            <li>
+                                <a href="#">Home 3</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="nav_link">
+                            <i class='bx bx-bookmark nav_icon'></i>
+                            <span class="nav_name">Bookmark</span> </a>
+                        <a href="#" class="nav_link"> <i class='bx bx-folder nav_icon'></i> <span
+                                class="nav_name">Files</span>
+                        </a>
+                        <a href="#" class="nav_link"> <i class='bx bx-bar-chart-alt-2 nav_icon'></i>
+                            <span class="nav_name">Stats</span>
+                        </a>
+                    </div>
+                </div>
+                <a href="#" class="nav_link ">
+                    <i class='bx bx-log-out nav_icon'></i>
+                    <span class="nav_name">SignOut</span>
+                </a>
+            </nav>
+        </div>
+    </div>
+
+    <!--Container Main start-->
+    <div class="col-9 col-sm-9 col-md-9 col-lg-9 col-xl-9 col-xxl-9">
+        <div class="p-3 fw-bold">
+            <h3>Dashboard</h3>
+        </div>
+        <div class="container-fluid">
+            <div class="cards-width">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-info m-2">
+
+                            <div class="fw-bolder text-white p-3 float-end first-card">
+                                <h1>150</h1>
+                                <i class="fa-solid fa-bag-shopping float-end card-icon"></i>
+                                <p>New Order</p>
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-success m-2">
+
+                            <div class="fw-bolder text-white p-3 float-end first-card">
+                                <h1>53%</h1>
+                                <i class="fa-solid fa-chart-simple  float-end card-icon2"></i>
+
+                                <p>Bounce Rate</p>
+
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-warning m-2">
+
+                            <div class="fw-bolder p-3 float-end first-card">
+                                <h1>44</h1>
+                                <i class="fa-solid fa-user float-end card-icon3"></i>
+                                <p>User Registrations</p>
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3">
+                        <div class="card bg-danger m-2">
+
+                            <div class="fw-bolder text-white p-3 float-end first-card">
+                                <h1>65</h1>
+                                <i class="nav-icon fas fa-chart-pie float-end card-icon4"></i>
+                                <p>Unique Visitors</p>
+                            </div>
+                            <a href="" class="card-a">More info <i class="fa-solid fa-circle-arrow-right"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Container Main end-->
+    <div class="container-fluid pt-3">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                <div class=" alt-chart shadow">
+
+                    <div class="p-2 p-lg-2">
+                        <div class="border-bottom pb-2 ">
+                            <i class="fas fa-chart-pie mr-1 fs-4"></i>
+                            <span class="fs-4">Sales </span>
+                            <div class="float-end chart-button">
+                                <button class="chart-button1">Area</button>
+                                <button onclick="imagefun()" class="chart-button2">Dount</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-5">
+                        <img id="getImage" src="assets/img/download.png" alt="" width="100%">
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                <div class=" alt-map">
+
+                    <div class="p-2 p-lg-2">
+                        <div class=" pb-2 ">
+                            <i class="fas fa-map-marker-alt mr-1 fs-4 text-white"></i>
+                            <span class="fs-4 text-white"><b>Visitor </b></span>
+                            <div class="float-end map-button">
+                                <button><i class="fa-regular fa-calendar-days"></i></button>
+                                <button><i class="fa-solid fa-minus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <img id="getImage" src="assets/img/map.png" alt="" width="100%">
+                    </div>
+
+                </div>
+            </div>
+            <!-- map section end -->
+            <div class="container-fluid pt-3">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                        <div class="chat-card">
+                            <div class="card card-header">
+
+                                <div class="p-2 p-lg-2">
+                                    <div class="border-bottom pb-2 ">
+
+                                        <span class="fs-4 "><b>Direct Chate</b> </span>
+                                        <div class="float-end map-button">
+                                            <span class="  text-white">3</span>
+                                            <button><i class="fa-solid fa-minus text-dark"></i></button>
+                                            <button><i class="fa-solid fa-xmark text-dark"></i></button>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body">
+                                        <div class="card-body-section">
+                                            <span><b>Alexander Pierce</b></span>
+                                            <span class="float-end">23 Jan 2:00 pm</span>
+                                        </div>
+                                        <div class="card-body-section-img">
+                                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                                            <p>Is this template really for free? That's unbelievable!</p>
+                                        </div>
+                                        <div class="card-body-section">
+                                            <span class="float-end"><b>Alexander Pierce</b></span>
+                                            <span>23 Jan 2:00 pm</span>
+                                        </div>
+                                        <div class="card-body-section-img1">
+                                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                                            <p>Is this template really for free? That's unbelievable!</p>
+                                        </div>
+                                        <div class="card-body-section">
+                                            <span><b>Alexander Pierce</b></span>
+                                            <span class="float-end">23 Jan 2:00 pm</span>
+                                        </div>
+                                        <div class="card-body-section-img">
+                                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                                            <p>Is this template really for free? That's unbelievable!</p>
+                                        </div>
+                                        <div class="card-body-section">
+                                            <span class="float-end"><b>Alexander Pierce</b></span>
+                                            <span>23 Jan 2:00 pm</span>
+                                        </div>
+                                        <div class="card-body-section-img1">
+                                            <img src="assets/img/user1-128x128.jpg" alt="" width="50px">
+                                            <p>Is this template really for free? That's unbelievable!</p>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer">
+                                        <form action="#" method="post">
+                                            <div class="input-group">
+                                                <input type="text" name="message" placeholder="Type Message ..."
+                                                    class="form-control">
+                                                <span class="input-group-append">
+                                                    <button type="button" class="btn btn-info">Send</button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                        <div class="alt-graph">
+
+                            <div class="p-2 p-lg-2">
+                                <div class="border-bottom pb-2 ">
+                                    <i class="fas fa-th mr-1 fs-4 text-light"></i>
+                                    <span class="fs-4 text-white"><b>Sales Graph</b> </span>
+                                    <div class="float-end map-button">
+                                        <button><i class="fa-solid fa-minus"></i></button>
+                                        <button><i class="fa-solid fa-xmark"></i></button>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="">
+                                <img id="getImage" src="assets/img/Graph.png" alt="" width="100%">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- chat section end -->
+            <div class="container-fluid pt-3">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+
+                        <div class="card card-header ">
+
+                            <div class="p-2 p-lg-2">
+                                <div class="border-bottom pb-2 ">
+                                    <i class="fa-regular fa-file-lines"></i>
+                                    <span class="fs-5 ">To Do List </span>
+                                    <div class="float-end Do-list">
+                                        <ul>
+                                            <li><a href=""><i class="fa-solid fa-backward"></i></a></li>
+                                            <li><a href="">1</a></li>
+                                            <li><a href="">2</a></li>
+                                            <li><a href="">3</a></li>
+                                            <li><a href=""><i class="fa-solid fa-forward"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <ul class="sortable">
+                                        <li class="draggable"><span class="handle ui-sortable-handle p-2">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </span> <input type="checkbox"><span class="p-2">Design a nice theme
+                                            </span><span class="bg-danger rounded p-1 clock fw-bold text-white"><i
+                                                    class="fa-solid fa-clock"></i> 2 mins </span>
+                                        </li>
+                                        <li class="draggable"><span class="handle ui-sortable-handle p-2">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </span> <input type="checkbox"><span class="p-2">Make the theme responsive
+                                            </span><span class="bg-dark-subtle rounded p-1 clock fw-bold text-white"><i
+                                                    class="fa-solid fa-clock"></i> 4 hours </span></li>
+                                        <li class="draggable"><span class="handle ui-sortable-handle p-2">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </span> <input type="checkbox"><span class="p-2"> Let theme shine like a
+                                                star </span><span
+                                                class="bg-warning rounded p-1 clock fw-bold text-white"><i
+                                                    class="fa-solid fa-clock"></i> 1 day </span></li>
+                                        <li class="draggable"><span class="handle ui-sortable-handle p-2">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </span> <input type="checkbox"><span class="p-2"> Let theme shine like a
+                                                star </span> <span
+                                                class="bg-success   rounded p-1 clock fw-bold text-white"><i
+                                                    class="fa-solid fa-clock"></i> 3 days </span></li>
+                                        <li class="draggable"><span class="handle ui-sortable-handle p-2">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </span> <input type="checkbox"><span class="p-2">Check your messages and
+                                                notifications </span> <span
+                                                class="bg-info rounded p-1 clock fw-bold text-white"><i
+                                                    class="fa-solid fa-clock"></i> 1 week </span></li>
+                                        <li class="draggable"><span class="handle ui-sortable-handle p-2">
+                                                <i class="fas fa-ellipsis-v"></i>
+                                                <i class="fas fa-ellipsis-v"></i>
+                                            </span> <input type="checkbox"><span class="p-2">Let theme shine like a star
+                                            </span><span class="bg-secondary rounded p-1 clock fw-bold text-white"><i
+                                                    class="fa-solid fa-clock"></i> 1 month </span></li>
+                                    </ul>
+                                </div>
+
+                                <div class="card-footer">
+                                    <form action="#" method="post">
+                                        <button type="button" class="btn btn-info float-end"><i
+                                                class="fa-solid fa-plus"></i>Add item</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                        <div class="wrapper">
+                            <header>
+                                <p class="current-date"></p>
+                                <div class="icons">
+                                    <span id="" class="material-symbols-rounded bg-danger-subtle text-white"><i
+                                            class="fa-solid fa-chevron-left"></i> </span>
+                                    <span id="next" class="material-symbols-rounded bg-danger-subtle text-white"><i
+                                            class="fa-solid fa-chevron-right"></i></span>
+                                </div>
+                            </header>
+                            <div class="calendar">
+                                <ul class="weeks ">
+                                    <li class=" text-white">Sun</li>
+                                    <li class=" text-white">Mon</li>
+                                    <li class=" text-white">Tue</li>
+                                    <li class=" text-white">Wed</li>
+                                    <li class=" text-white">Thu</li>
+                                    <li class=" text-white">Fri</li>
+                                    <li class=" text-white">Sat</li>
+                                </ul>
+                                <ul class="days"></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="main-footer pt-5 pb-3">
+                        <strong>Copyright © 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+                        All rights reserved.
+                        <div class="float-end d-none d-sm-inline-block">
+                            <b>Version</b> 3.2.0
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/jquery-3.7.0.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/f-all.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
